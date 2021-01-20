@@ -37,6 +37,7 @@ export default function ShoppingCartItem({product, handleRemoveItem}) {
             <Avatar className={classes.avatar}>{product.quantity ? product.quantity : '1'}</Avatar>
             <IconButton
                 onClick={handleRemoveItem}
+                data-id={product.id}
                 aria-label="remove from cart"
                 color="primary"
                 size="small"

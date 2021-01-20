@@ -85,7 +85,7 @@ const mapDispatchToProps = {
 }
 
 Search.propTypes = {
-    photos: PropTypes.array,
+    photos: PropTypes.object,
     searchPhotos: PropTypes.func,
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Search)

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from "react-redux";
+import Fade from "react-reveal/Fade";
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -71,6 +72,7 @@ function Products({
     };
 
     return (
+        <Fade bottom cascade>
         <Box className={classes.root}>
             <Grid container justify={"center"} alignItems={"center"} spacing={2}>
                 {
@@ -120,6 +122,7 @@ function Products({
                 errorMessage && <h1>{errorMessage}</h1>
             }
         </Box>
+        </Fade>
     );
 }
 

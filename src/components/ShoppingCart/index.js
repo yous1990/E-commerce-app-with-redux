@@ -97,7 +97,7 @@ function ShoppingCart({ products, removeProduct }) {
                                 src={EmptyCart}
                                 height={"100px"}
                                 />
-                            }
+                        }
                     </div>
                 </div>
             </Popover>
